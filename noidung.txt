@@ -1,0 +1,29 @@
+[21/04/2025 03:11] Đã cập nhật home.html sử dụng CDN Bootstrap 5 thay cho file bootstrap nội bộ để đảm bảo hiệu ứng trượt của carousel hoạt động tốt nhất.
+- Thay thế <link rel="stylesheet" ... bootstrap.css> bằng CDN.
+- Thay thế <script ... bootstrap.js> bằng CDN.
+- Ghi chú: Nếu có hoạt động nào khác liên quan đến Bootstrap, hãy tiếp tục ghi vào file này.
+
+[21/04/2025 03:12] Đã thêm CSS vào home.html để tăng hiệu ứng chuyển cảnh trượt mượt mà cho carousel Bootstrap:
+.carousel-item {
+  transition: transform 1s cubic-bezier(0.77, 0, 0.175, 1);
+}
+Nếu cần hiệu ứng khác, hãy chỉnh lại giá trị transition hoặc báo cho tôi.
+
+[21/04/2025 03:26] Đã thêm CSS bo góc và phối màu thuận mắt cho từng chức năng trên thanh navbar:
+.navbar-nav .nav-link {
+  border-radius: 16px;
+  margin: 0 4px;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  transition: background 0.3s, color 0.3s;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {
+  background: #e3f2fd;
+  color: #0d6efd !important;
+}
+.navbar-nav .dropdown-menu {
+  border-radius: 12px;
+}
+
+[21/04/2025 03:32] Đã thêm menu nổi bật dưới banner1 với hai nút Apple và Samsung, giao diện bo góc, nền sáng giống mẫu. Vị trí: ngay sau banner1 trong home.html.
+
